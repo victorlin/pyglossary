@@ -178,6 +178,20 @@ If you have trouble with any format, please check the [link given for that forma
 
 **Using Termux on Android?** See [doc/termux.md](./doc/termux.md)
 
+## Using with Docker
+
+Build the image:
+
+```sh
+./docker-build.sh
+```
+
+Run with the image in any directory:
+
+```sh
+docker run -it -v $(pwd):/tmp pyglossary:latest -h
+```
+
 ## Configuration
 
 See [doc/config.rst](./doc/config.rst).
